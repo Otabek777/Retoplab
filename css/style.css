@@ -2009,8 +2009,8 @@ ul, ol {
     right: auto;
     left: -70px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: translateY(-50%) rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
   }
   .clients .slick-prev, .we_offer .slick-prev, .cases .slick-prev {
     display: none !important;
