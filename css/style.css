@@ -2006,15 +2006,16 @@ ul, ol {
 
 @media screen and (min-width: 768px) {
   .clients .slick-next, .we_offer .slick-next, .cases .slick-next {
-    display: none !important;
-  }
-  .clients .slick-prev, .we_offer .slick-prev, .cases .slick-prev {
+    right: auto;
     left: -70px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .we_offer .slick-prev {
+  .clients .slick-prev, .we_offer .slick-prev, .cases .slick-prev {
+    display: none !important;
+  }
+  .we_offer .slick-next {
     border: 2px solid #1B935A;
     border-radius: 50%;
     top: 30%;
