@@ -63,6 +63,23 @@
             </div>
         </div>
     </header>
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal__block">
+            <button class="close"></button>
+            <p class="title">Заказать аудит компании</p>
+            <div class="input">
+                <input type="text" placeholder="Имя">
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input">
+                <input type="email" placeholder="+7 (___) ___ ___">
+            </div>
+            <button class="banner__btn">Заказать</button>
+        </div>
+    </div>
 
     <main class="main">
         <section class="banner">
@@ -111,7 +128,9 @@
                             </div>
                             <p>Ваша репутация – то, что говорят у Вас за спиной. С ReTop говорить будут только хорошее</p>
                         </div>
-                        <button class="banner__btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.8s">Заказать бесплатный аудит компании</button>
+                        <div class="banner__btn_fixed">
+                            <button class="banner__btn wow fadeInUp open-modal" data-wow-duration="1s" data-wow-delay="2.8s">Заказать бесплатный аудит компании</button>
+                        </div>
                     </div>
                     <div class="banner__img wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
                         <img src="img/star-1.svg" alt="" class="star1">
@@ -962,6 +981,7 @@
             </div>
         </section>
     </main>
+    <button class="besamogas"></button>
     <div class="footer">
         <img src="img/footer-left.png" alt="" class="footer__left">
         <img src="img/footer-right.png" alt="" class="footer__right">
@@ -975,16 +995,16 @@
                     <div class="footer__nav">
                         <ul class="ul">
                             <li class="li">
-                                <a href="#" class="item">О компании</a>
+                                <a href="#company" class="item">О компании</a>
                             </li>
                             <li class="li">
-                                <a href="#" class="item">Услуги и цены</a>
+                                <a href="#services" class="item">Услуги и цены</a>
                             </li>
                             <li class="li">
-                                <a href="#" class="item">Кейсы</a>
+                                <a href="#card" class="item">Кейсы</a>
                             </li>
                             <li class="li">
-                                <a href="#" class="item">Контакты</a>
+                                <a href="#contacts" class="item">Контакты</a>
                             </li>
                         </ul>
                     </div>
