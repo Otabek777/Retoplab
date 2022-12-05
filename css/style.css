@@ -2004,6 +2004,22 @@ ul, ol {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .clients .slick-next, .we_offer .slick-next, .cases .slick-next {
+    display: none !important;
+  }
+  .clients .slick-prev, .we_offer .slick-prev, .cases .slick-prev {
+    left: -70px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .we_offer .slick-prev {
+    border: 2px solid #1B935A;
+    border-radius: 50%;
+    top: 30%;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner__btn_fixed {
     height: 82px;
