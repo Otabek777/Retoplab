@@ -1746,6 +1746,8 @@ ul, ol {
 }
 .location .container {
   max-width: 1170px;
+  position: relative;
+  z-index: 2;
 }
 
 .location__box {
@@ -1819,10 +1821,22 @@ ul, ol {
   padding-top: 70px;
   padding-bottom: 57px;
   position: relative;
-  z-index: 100;
 }
 .footer .container {
   max-width: 1174px;
+}
+
+.footer::after {
+  content: "";
+  width: 50%;
+  height: 100px;
+  background: #1E1E20;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 99;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .footer__left {
@@ -1842,7 +1856,7 @@ ul, ol {
   background: #1B935A;
   border-radius: 10px;
   position: relative;
-  z-index: 2;
+  z-index: 190;
 }
 
 .footer__top {
@@ -2022,6 +2036,12 @@ ul, ol {
   }
 }
 @media screen and (max-width: 768px) {
+  .footer::after {
+    display: none;
+  }
+  .footer {
+    z-index: 100;
+  }
   .banner__btn_fixed {
     height: 82px;
   }
