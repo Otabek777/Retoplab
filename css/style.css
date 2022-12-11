@@ -1490,6 +1490,13 @@ ul, ol {
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   border-radius: 10px;
   padding: 22px 32px;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+.cases__wrap.white-text {
+	opacity: 0;
+	transform: scale(0.9);
 }
 .cases__wrap .title {
   font-weight: 700;
