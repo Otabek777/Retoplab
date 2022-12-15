@@ -733,7 +733,6 @@ ul, ol {
 }
 
 .clients__block {
-  padding: 0 50px;
   width: 270px;
   height: 146px;
   display: -webkit-box;
@@ -748,9 +747,15 @@ ul, ol {
   margin-right: 30px;
   background: url(../img/number-bg1.svg) no-repeat center/cover;
   background-size: 100% 100%;
+  position: relative;
 }
 .clients__block img {
-  width: 100%;
+  width: calc(100% - 26px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .top_line {
@@ -1490,13 +1495,6 @@ ul, ol {
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   border-radius: 10px;
   padding: 22px 32px;
-  opacity: 1;
-  transform: scale(1);
-  transition: all 0.4s ease;
-}
-.cases__wrap.white-text {
-	opacity: 0;
-	transform: scale(0.9);
 }
 .cases__wrap .title {
   font-weight: 700;
