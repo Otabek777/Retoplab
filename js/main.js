@@ -1,17 +1,17 @@
-$(function(){
-    $('.ul .item').click(function(){
-        $(".header__burgir").removeClass("rotate");
-        $(".header__box").removeClass("transform");
-        $(".header__navbar").removeClass("active");
-        setTimeout(function() {
-            $(".header__burgir").removeClass("active");
-            $(".header__navbar").removeClass("opacity");
-        }, 500);
-        var target = $(this).attr('href');
-        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
-        return false;
-    });
-});
+// $(function(){
+//     $('.ul .item').click(function(){
+//         $(".header__burgir").removeClass("rotate");
+//         $(".header__box").removeClass("transform");
+//         $(".header__navbar").removeClass("active");
+//         setTimeout(function() {
+//             $(".header__burgir").removeClass("active");
+//             $(".header__navbar").removeClass("opacity");
+//         }, 500);
+//         var target = $(this).attr('href');
+//         $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+//         return false;
+//     });
+// });
 
 // Open Services Blocks
 $('.services-open').click(function(){
@@ -42,13 +42,21 @@ $(".header__burgir").click(function() {
     };
 });
 
+// $(window).scroll(function(){
+//     if ( $(this).scrollTop() > 1) {
+//         $('.besamogas').css({bottom : '20px'});
+//         $('.header').addClass("fixed");
+//     } else {
+//         $('.besamogas').css({bottom : '-100%'});
+//         $('.header').removeClass("fixed");
+//     }
+// });
 
 if (window.innerWidth > 768) {
     $(window).scroll(function(){
         if ( $(this).scrollTop() > 100) {
             $(".banner__btn_fixed").addClass("fixed");
         } else {
-            
             $(".banner__btn_fixed").removeClass("fixed");
         }
     });
@@ -57,20 +65,10 @@ if (window.innerWidth > 768) {
         if ( $(this).scrollTop() > 500) {
             $(".banner__btn_fixed").addClass("fixed");
         } else {
-            
             $(".banner__btn_fixed").removeClass("fixed");
         }
     });
 }
-$(window).scroll(function(){
-    if ( $(this).scrollTop() > 100) {
-        $('.besamogas').css({bottom : '20px'});
-        $('.header').addClass("fixed");
-    } else {
-        $('.besamogas').css({bottom : '-100%'});
-        $('.header').removeClass("fixed");
-    }
-});
 $('.besamogas').on('click', function(){
     $('html, body').animate({
         scrollTop: 0
@@ -95,7 +93,6 @@ $(".modal .close").click(function() {
 // Animate Elements
 $(window).scroll(function() {
     let st = $(this).scrollTop();
-
     $(".star1").css({
         "transform" : "translate(0px, -" + st/15 + "px"
     });

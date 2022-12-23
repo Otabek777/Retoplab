@@ -180,27 +180,20 @@ ul, ol {
   background: #1B935A;
   position: fixed;
   right: 20px;
-  bottom: -100%;
+  bottom: 20px;
   z-index: 101;
   border: 0;
   border-radius: 4px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.besamogas::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border: 3px solid #FFFFFF;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  border-radius: 2px;
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  transform: translate(-50%, -50%) rotate(45deg);
-  border-bottom: 0;
-  border-right: 0;
+.besamogas svg {
+  width: 70%;
+  height: 70%;
+  transform: translateY(-2px);
 }
 
 .besamogas:hover {
@@ -214,10 +207,7 @@ ul, ol {
   top: 0;
   left: 0;
   z-index: 100;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
-
 .header.fixed {
   background: #1E1E1F;
   border-bottom: 1px solid #777777;
@@ -264,12 +254,12 @@ ul, ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  color: #FFFFFF !important;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .header__navbar .item:hover, .header__navbar_mobile .item:hover {
-  color: #1B935A;
+  color: #1B935A !important;
 }
 
 .header__soc {
